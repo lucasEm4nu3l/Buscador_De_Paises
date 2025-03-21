@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscar Países</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+        .conteiner {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+        input {
+            margin-bottom: 10px;
+            padding:10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <h1>Buscador de Países</h1>
+        <input type="text" placeholder="Digite o nome do País" id="countryInput">
+        <button onclick="fetchCountry()">Buscar</button>
+        <div id="result"></div>
+    </div>
+    <script src="./../dist/app.js"></script>
+</body>
+</html>
